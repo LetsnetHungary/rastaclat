@@ -1,0 +1,30 @@
+{
+	"css" :
+	{
+		"1" : "_assets/_css/_bs/bootstrap.min.css",
+		"2" : "_assets/_css/_main.css",
+		"3" : "_assets/_css/clatlife/clatlife.css"
+	},
+	"js" :
+	{
+		"0" : "_assets/_js/_bs/bootstrap.min.js",
+		"1" : "_assets/_js/modals/view-more.js",
+		"2" : "_assets/_js/_ajax/_ajax.js",
+		"3" : "_assets/_js/_main.js"
+	},
+	"seo" :
+	{
+		"title" : "Rastaclat Hungary",
+		"charset" : "UTF-8",
+
+		"meta" :
+		{
+
+		},
+
+		"og" :
+		{
+
+		}
+	}
+}
