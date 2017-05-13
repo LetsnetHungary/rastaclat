@@ -1,0 +1,89 @@
+@media (min-width: 768px) {
+    #vm-modal {
+        width: 65vw;
+    }
+}
+#vm-modal .modal_content, .modal_body {
+    height: 100%;
+    width: 100%;
+}
+.viewmore__modal__header {
+    padding: 15px 0;
+}
+#view-more-pic {
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: auto;
+}
+.modal__info__holder p {
+    text-align: center;
+    width: 90%;
+    font-size: 17px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.modal__info__holder * {
+    margin-left: auto;
+    margin-right: auto;
+}
+.vm-title {
+    text-transform: uppercase;
+    font-size: 20px!important;
+    padding-top: 15px;
+}
+.vm-afa {
+    font-size: 13px!important;
+    font-weight: 300;
+}
+.vm-collinfo {
+    font-style: italic;
+    font-weight: 400;
+}
+.vm-desc {
+    text-transform: uppercase;
+}
+.vm-prop {
+    font-weight: 300;
+}
+.vm-size2 {
+    font-weight: 300;
+}
+.vm-noitem {
+    font-size: 15px;
+    font-style: italic;
+    color: #ff3434;
+    font-weight: 300;
+}
+#vm-modal.modal {
+    margin-top: 0;
+    text-align: center;
+    padding: 0;
+}
+#view-more:before {
+    content: '';
+    display: inline-block;
+    height: 0;
+    vertical-align: middle;
+}
+#vm-modal .modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+.vm-pop-up-button {
+    position: absolute;
+    left: 50%;
+    margin-left: -75px;
+    bottom: 10%;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 25px;
+    color: white;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+.vm-pop-up-button:hover {
+    color: #ebb526;
+}

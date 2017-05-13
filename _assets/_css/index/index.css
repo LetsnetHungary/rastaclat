@@ -1,0 +1,174 @@
+section {
+  background-color: white;
+}
+@media screen and (max-width: 768px) {
+    #navbar_container {
+        padding-top: 0;
+    }
+
+    #slider {
+      padding-top: 69px;
+    }
+}
+#slider>.container-fluid {
+    padding: 0;
+    height: auto;
+}
+#slider .carousel-inner .item>img {
+    width: 100%;
+    max-height: 100vh;
+    object-fit: cover;
+}
+#slider .carousel-indicators {
+    width: 80%;
+    margin-left: -40%;
+}
+#slider .carousel-control {
+    width: 10%;
+}
+#featured_items {
+    padding-bottom: 50px;
+}
+#about {
+  height: 600px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none!important;
+}
+.about__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#about h1 {
+    font-size: 12pt;
+    text-transform: uppercase;
+    color: #302f2f;
+    font-weight: bold;
+}
+#about h2 {
+    font-size: 18pt;
+    text-transform: uppercase;
+    color: #302f2f;
+    font-weight: bold;
+    font-style: italic;
+}
+#about p {
+  margin: 10px auto;
+  padding: 10px 0;
+  width: 40%;
+  color: #302f2f;
+  line-height: 1.4em;
+  font-size: 15px;
+}
+
+#social {
+  padding: 0!important;
+  padding-top: 50px!important;
+}
+
+@media only screen and (max-width: 768px) {
+
+  #about p {
+    width: 90%;
+  }
+  #about {
+    height: 700px;
+  }
+
+  #about h2 {
+      font-size: 13pt;
+      text-transform: uppercase;
+      color: #302f2f;
+      font-weight: bold;
+      font-style: italic;
+  }
+}
+
+#social {
+    text-align: center;
+    padding: 16px;
+}
+#social_clatography {
+    font-size: 14px;
+    color: #aba9a9;
+    line-height: 2em;
+    text-transform: uppercase;
+    font-style: italic;
+}
+#social_clatography .table_wrapper {
+    height: 320px;
+}
+#social_clatography p {
+    display: table-cell;
+    vertical-align: middle;
+}
+#clatography {
+    padding-bottom: 50px;
+}
+#clatography .carousel-inner .item {
+    text-align: center;
+}
+#clatography .carousel-inner .item img {
+    width: 100%;
+    object-fit: cover;
+}
+#clatography .carousel-inner .item .col-xs-12 {
+    padding: 0.3vw;
+}
+#clatography .carousel-control {
+    background: transparent;
+}
+#clatography .slider_button {
+    margin: 0 16px;
+    color: #666;
+    font-size: 24px;
+}
+#clatography_slider_buttons span {
+    line-height: 64px;
+    vertical-align: center;
+}
+#clatography_slider_buttons button {
+    display: inline;
+    vertical-align: center;
+}
+
+#clatography_slider_buttons {
+    margin: 16px auto;
+}
+
+#clatography .button_back {
+    background-color: transparent;
+    border: 1px solid #666;
+    color: #666;
+}
+#clatography .button_back:hover {
+    background-color: #ffc300;
+}
+.backimg {
+  z-index: -1;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+}
+.backimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.news_item {
+  height: 300px;
+  width: auto;
+  object-fit: cover;
+}
+
+.define {font-family: 'Bebas Neue', Arial, Helvetica, sans-serif; font-size: 12px; color: #000; line-height: 10px; text-transform: uppercase; letter-spacing: 3px;}
+
+.define strong{font-family: 'bebas-neue', Arial, Helvetica, sans-serif; font-size: 16px; color: #000; margin: 30px 0;}
+.define h3{ font-family: 'Bebas Neue', Arial, Helvetica, sans-serif; font-size: 20px; font-weight: bold; color: #333; line-height: 10px; letter-spacing: 3px;}
+
+.define-block {
+	border-bottom: 1px #d4d4d4 solid; padding-bottom: 20px;}

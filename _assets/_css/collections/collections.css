@@ -1,0 +1,115 @@
+.collection_item {
+    position: relative;
+    /*background-image: url("/assets/img/collection/CLASSIC  ASPHALT/1.jpg");*/
+    background-position: center;
+    background-size: cover;
+    transition: background 0.5s linear;
+    height: 30vw;
+}
+.collection_item_overlay {
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+.collection_item_overlay_content_container  {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 100%;
+}
+.collection_item_overlay_content_container>p {
+    color: white;
+    font-style: italic;
+    font-size: 16pt;
+    text-transform: uppercase;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+    letter-spacing: 5px;
+}
+.collection_item_button {
+    width: 85%;
+    max-width: 230px;
+    margin: 10% auto;
+    padding: 10px 0;
+    color: white;
+    font-size: 11pt;
+    text-transform: uppercase;
+    border: 1px solid white;
+    background-color: transparent;
+}
+.collection_item_button:hover {
+    border-color: #FFC300;
+    background-color: #FFC300;
+}
+
+.col-xs-4 {
+    padding:2.5px;
+}
+
+#slider_modal {
+    padding: 0;
+    margin: 0;
+    margin-top: 70px;
+    width: 100%;
+}
+#slider_modal .modal-body {
+    padding: 0;
+}
+
+.vm-pop-up-button {
+    position: absolute;
+    left: 50%;
+    margin-left: -75px;
+    bottom: 10%;
+    border: 0;
+    background-color: rgba(0,0,0,0.6);
+    padding: 10px 25px;
+    color: white !important;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+.vm-pop-up-button:hover {
+    color: #ebb526;
+}
+
+@media (max-width: 768px) {
+    .collection_item {
+        height: 70vw;
+        margin:0;
+        padding:0;
+    }
+}
+
+@media (max-width: 767px) {
+    .collection_item_overlay p, .collection_item_button {
+        font-size: 4vw;
+    }
+}
+
+#about {
+    text-align: center;
+    background-color: #ececec;
+    margin-bottom: 50px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+#about h1 {
+    font-size: 10pt;
+    text-transform: uppercase;
+    color: #666;
+    font-weight: bold;
+}
+#about h2 {
+    font-size: 18pt;
+    text-transform: uppercase;
+    color: #ffc300;
+    font-weight: bold;
+    font-style: italic;
+}
+#about p {
+    color: #666;
+    line-height: 1.3em;
+    font-size: 14px;
+}

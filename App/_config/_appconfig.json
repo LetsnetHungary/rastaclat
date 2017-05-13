@@ -1,0 +1,19 @@
+{
+  "database" : {
+    "basic": {
+      "DB_TYPE" : "mysql",
+      "DB_HOST" : "localhost",
+      "DB_PORT" : "3306",
+      "DB_NAME" : "rastacla_newmain",
+      "DB_USER" : "rastacla_new",
+      "DB_PASS" : "l.H2w&mKEhsv"
+    }
+    ,
+    "visitorsDB" : "rastacla_Visitors",
+    "cmsDB" : "rastacla_cms",
+    "autchenticationDB" : "rastacla_newmain"
+  },
+  "timezone" : "Europe/Budapest",
+  "firstpage" : "Index",
+  "authentication" : "true"
+}

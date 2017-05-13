@@ -1,0 +1,23 @@
+#about {
+    text-align: center;
+    background-color: #ececec;
+    margin-top: 50px;
+}
+#about h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #666;
+    font-weight: bold;
+}
+#about h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #ffc300;
+    font-weight: bold;
+    font-style: italic;
+}
+#about p {
+    color: #666;
+    line-height: 1.3em;
+    font-size: 20px;
+}

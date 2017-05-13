@@ -1,0 +1,37 @@
+{
+	"css" :
+	{
+		"1" : "_assets/_css/_bs/bootstrap.min.css",
+		"2" : "_assets/_css/_main.css",
+		"3" : "_assets/_css/index/index.css",
+		"4" : "_assets/_css/modals/view-more.css"
+	},
+	"js" :
+	{
+		"0" : "_assets/_js/_bs/bootstrap.min.js",
+		"1" : "_assets/_js/modals/view-more.js",
+		"2" : "_assets/_js/index/index.js",
+		"3" : "_assets/_js/_ajax/_ajax.js",
+		"4" : "_assets/_js/_main.js"
+	},
+	"seo" :
+	{
+		"title" : "Rastaclat Hungary",
+		"charset" : "UTF-8",
+
+		"meta" :
+		{
+			"description" : "Rastaclat Hungary",
+			"keywords" : "Karkötő,Bracelet,Rastaclat",
+			"robots" : "index, follow"
+		},
+
+		"og" :
+		{
+			"url" : "https://www.rastaclat.hu/index",
+			"title" : "Rastaclat Hungary",
+			"description" : "Rastaclat Hungary description",
+			"image" : "https://www.a.rastaclat.hu/_assets/img/brand-logo.png"
+		}
+	}
+}
