@@ -162,7 +162,7 @@
 </section>
 <section id="clatography">
     <div class="container-fluid">
-        <h1 class="page_header">Clatography</h1>
+        <h1 class="page_header">Clatographyy</h1>
         <div id="clatography_slider_buttons" class="text-center">
             <a href="#clatography_slider" role="button" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left slider_button" aria-hidden="true"></span>
