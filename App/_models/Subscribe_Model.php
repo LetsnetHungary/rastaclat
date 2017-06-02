@@ -24,25 +24,20 @@
 
 		public function subscribe($name, $email)
 		{
+
 			if(!$this->checkIfAlreadySubscribed($email))
 			{
 				try
 				{
-					$stmt = $this->db->prepare("INSERT INTO subscribe (datee, name, email, subtime, url, ip, useragent) VALUES (:datee, :name, :email, :subtime, :url, :ip, :useragent)");
-
+					$stmt = $this->db->prepare("INSERT INTO `subscribe` (`name`, `email`, `date`) VALUES (:name, :email, :datee) ");
+					$date = date("F j, Y, g:i a");
 					$stmt->execute(array(
-
-						":datee" => date("F j, Y, g:i a"),
+						":datee" => $date,
 						":name" => $name,
-						":email" => $email,
-						":subtime" => time(),
-						":url" => $_SERVER["REQUEST_URI"],
-						":ip" => $_SERVER["REMOTE_ADDR"],
-						":useragent" => $_SERVER["HTTP_USER_AGENT"],
-
+						":email" => $email
 						));
 
-					echo "Sikeres feliratkozás !";
+					echo "Sikeres feliratkozás!";
 				}
 				catch(Exception $e)
 				{

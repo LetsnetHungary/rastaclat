@@ -2,7 +2,7 @@
 namespace CoreApp;
 
     use \PDO;
-    
+
     class DB extends PDO {
 
         public static function monthTable($dbname, $tablename) {
@@ -12,8 +12,9 @@ namespace CoreApp;
             if($dbname) {
                 $dbconfig->DB_NAME = $dbname;
             }
+            $this->config->DB_NAME = !empty($db) ? $db : $this->config->DB_NAME;
+  				$pdo = $this->config->DB_TYPE.":host=". $this->config->DB_HOST.";port=".$this->config->DB_PORT.";dbname=".$this->config->DB_NAME;
 
-            $pdo = $dbconfig->DB_TYPE.":host=". $dbconfig->DB_HOST.";port=.".$dbconfig->DB_PORT.";dbname=".$dbname;
 
             $db = new PDO($pdo, $dbconfig->DB_USER, $dbconfig->DB_PASS);
 

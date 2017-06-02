@@ -16,12 +16,14 @@ use \PDO;
 		public function PDOConnection() {
 			if($this->PDO == null)
 			{
-				$pdo = $this->config->DB_TYPE.":host=". $this->config->DB_HOST.";port=.".$this->config->DB_PORT.";dbname=".$this->config->DB_NAME;
+				$this->config->DB_NAME = !empty($db) ? $db : $this->config->DB_NAME;
+				$pdo = $this->config->DB_TYPE.":host=". $this->config->DB_HOST.";port=".$this->config->DB_PORT.";dbname=".$this->config->DB_NAME;
+
 
 				try {
 					$this->PDO = new \PDO($pdo, $this->config->DB_USER, $this->config->DB_PASS);
 				}
-				catch(Exception $ex) {
+				catch(Exception $ex) { 
 					echo "Cannot connect to the db: ";
 					print_r($ex);
 				}
