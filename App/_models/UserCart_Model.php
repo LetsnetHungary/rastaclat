@@ -19,7 +19,7 @@
 
 		public function addToCart($prodid)
 		{
-			$stmt = $this->db->prepare("SELECT prod_id, name, type, price FROM prod_prop WHERE prod_id = :prod_id");
+			$stmt = $this->db->prepare("SELECT prod_id, prod_name, prod_price FROM prods WHERE prod_id = :prod_id");
 			$stmt->execute(
 				array(
 
@@ -180,7 +180,7 @@
 				$mail->to = $customerdata["email"];
 				$mail->send();
 
-	    	$this->setWebshopStocks($cart);
+	    	//$this->setWebshopStocks($cart);
 	    }
 
 
@@ -191,7 +191,7 @@
 	    	$count = count($_SESSION["cart"]);
 	    	for($i = 0; $i < $count; $i++)
 	    	{
-	    		$stmt = $this->db->prepare("SELECT prod_id, prod_name, price, type FROM prod_prop WHERE prod_id = :prod_id");
+	    		$stmt = $this->db->prepare("SELECT prod_id, prod_name, prod_price FROM prods WHERE prod_id = :prod_id");
 	    		$stmt->execute(array(
 	    				":prod_id" => $cart[$i]["prod_id"]
 	    		));

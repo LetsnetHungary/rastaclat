@@ -20,7 +20,7 @@ use \CoreApp;
       {
         for($i = 0; $i < count($_SESSION["cart"]); $i++)
         {
-          $price += $_SESSION["cart"][$i]["count"] * $_SESSION["cart"][$i]["price"] * 1000;
+          $price += $_SESSION["cart"][$i]["count"] * $_SESSION["cart"][$i]["prod_price"] * 1000;
         }
         return($price);
       }

@@ -88,7 +88,7 @@
                         class="featured_item"
                         data-prodid="<?php echo $featuredItems[$i][0]["prod_id"]?>"
                     <?php
-                        if($featuredItems[$i][0]["webshop_stock"] > 1)
+                        if($featuredItems[$i][0]["webshop_stock"] == 0)
                         {
                     ?>
                             data-on_stock="1"
@@ -105,11 +105,11 @@
                         <div class="featured_item_img_cont">
                             <img src="_assets/img/shop/<?php echo $featuredItems[$i][0]["prod_id"];?>.jpg" class="featured_item_img" />
                         </div>
-                        <h5><?php echo $featuredItems[$i][0]["type"];?> : <?php echo $featuredItems[$i][0]["name"];?></h5>
+                        <h5><?php echo $featuredItems[$i][0]["prod_name"];?></h5>
                         <div class="featured_item_overlay">
-                            <h1><?php echo $featuredItems[$i][0]["price"];?> Ft</h1>
+                            <h1><?php echo $featuredItems[$i][0]["prod_price"];?> Ft</h1>
                             <?php
-                                if($featuredItems[$i][0]["webshop_stock"] > 1)
+                                if($featuredItems[$i][0]["outofstock"] == 0)
                                 {
                             ?>
                                 <button class="button_back add_to_cart"

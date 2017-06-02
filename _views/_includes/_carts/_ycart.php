@@ -84,13 +84,13 @@ for ($i = 0; $i < count($kosar); $i++) {
                     <div class="col-sm-6 product_list_box">
                         <img class="product_img" src="/_assets/img/shop/<?php echo $kosar[$i]["prod_id"]; ?>.jpg" alt="cart-img">
                         <div class="product_name">
-                            <?php echo $kosar[$i]["type"]." : ".$kosar[$i]["name"]; ?><br />
+                            <?php echo $kosar[$i]["prod_name"]; ?><br />
                             <a class="product_remove" data-prodid="<?php echo $kosar[$i]["prod_id"]; ?>" href="#">Törlés</a>
                         </div>
                     </div>
                     <div class="col-sm-6 product_list_box">
                         <div class="product_supp product_supp_right">
-                            <span class="product_price"><?php echo $kosar[$i]["price"] * $kosar[$i]["count"] * 1000; ?> Ft</span>
+                            <span class="product_price"><?php echo $kosar[$i]["prod_price"] * $kosar[$i]["count"] * 1000; ?> Ft</span>
                             <select class="product_qty" name="item-selector" data-prodid="<?php echo $kosar[$i]["prod_id"]; ?>">
                                 <?php
 

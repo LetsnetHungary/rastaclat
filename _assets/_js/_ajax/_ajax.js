@@ -3,7 +3,6 @@ $(function() {
     $(".product_item").click(function() {
         var prod_id = $(this).attr("data-prodid")
         var on_stock = $(this).attr("data-on_stock")
-        console.log(on_stock)
         if(on_stock == "1") {
           $.ajax({
               url: '../Viewmore/?prodid='+prod_id,
@@ -13,6 +12,7 @@ $(function() {
                   prodid: prod_id
               },
               success: function(result) {
+                  console.log(result)
                 var data = jQuery.parseJSON(result)
                 showViewMore(data)
               }
@@ -55,6 +55,7 @@ $(function() {
                 prodid: prodid
             },
             success: function(result) {
+                console.log(result)
                 $(location).attr('href','/Cart');
             },
             error: function(xhr, resp, text) {

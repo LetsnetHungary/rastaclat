@@ -9,7 +9,7 @@
 
 		public function getData($prodid)
 		{
-			$stmt = $this->db->prepare("SELECT * FROM prod_prop WHERE prod_id = :prodid");
+			$stmt = $this->db->prepare("SELECT * from prods inner join properties ON (prods.prod_id = properties.prod_id) WHERE prods.prod_id = :prodid");
 			$stmt->execute(array(
 
 				":prodid" => $prodid

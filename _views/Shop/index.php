@@ -92,7 +92,7 @@
                 <div class="col-sm-4">
                     <div id="product_<?php echo $i;?>" class="product_item" data-type = "<?php echo $products[$i]["type"]; ?>" sold =
                       <?php
-                      if($products[$i]["webshop_stock"] < 1) {
+                      if($products[$i]["outofstock"] > 0) {
                         ?>
                         "sold"
                         <?php
@@ -105,7 +105,7 @@
                       ?>
 						data-prodid="<?php echo $products[$i]["prod_id"]?>"
 						<?php
-                        if($products[$i]["webshop_stock"] > 1)
+                        if($products[$i]["outofstock"] == 0)
                             {
                         ?>
                                 data-on_stock="1"
@@ -122,11 +122,11 @@
                         <div class="product_item_img_cont">
                             <img src="/_assets/img/shop/<?php echo $products[$i]["prod_id"];?>.jpg" class="product_item_img" />
                         </div>
-                        <h5><?php echo $products[$i]["type"];?> : <?php echo $products[$i]["name"];?></h5>
+                        <h5><?php echo $products[$i]["prod_name"];?></h5>
                         <div class="product_item_overlay">
-                            <h1><?php echo $products[$i]["price"];?> Ft</h1>
+                            <h1><?php echo $products[$i]["prod_price"];?> Ft</h1>
 <?php
-	if($products[$i]["webshop_stock"] > 1) {
+	if($products[$i]["outofstock"] == 0) {
 ?>
                             <button class="button_back add_to_cart"
                             data-prodid="<?php echo $products[$i]["prod_id"];?>"
